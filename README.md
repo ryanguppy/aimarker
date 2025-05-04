@@ -1,87 +1,41 @@
-# GCSE AQA Mark Scheme Generator
+# Markwise - GCSE Question Marker
 
-A Next.js 14 application for generating mark schemes for GCSE AQA exams in English Literature, English Language, and History.
+A comprehensive web application for GCSE students to get accurate mark schemes and feedback on their exam responses.
 
 ## Features
 
-- Dark theme with modern UI
-- Support for multiple subjects and topics
-- Error handling and user feedback
-- Responsive design
-- Smooth animations and transitions
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18.0 or later
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/gcse-aqa-mark-scheme.git
-cd gcse-aqa-mark-scheme
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Error Handling
-
-The application includes comprehensive error handling:
-
-- Form validation for required fields
-- API error handling with user-friendly messages
-- Loading states for better user experience
-- Error boundaries to prevent application crashes
-
-## Project Structure
-
-```
-app/
-├── api/
-│   └── mark-scheme/
-│       └── route.js
-├── components/
-│   ├── SubjectSelect.jsx
-│   ├── TopicSelect.jsx
-│   └── MarkScheme.jsx
-├── globals.css
-├── layout.js
-└── page.jsx
-```
+- Support for GCSE AQA English Literature, English Language, and History
+- Topic selection for specific subjects
+- Question submission and response analysis
+- Upload handwritten responses
+- Custom mark scheme upload option
+- Detailed feedback with grade boundaries and mark scheme analysis
+- Visual highlighting system for strengths and areas for improvement
 
 ## Technologies Used
 
-- Next.js 14
 - React
-- Tailwind CSS
-- CSS Animations
-- Next.js API Routes
+- TypeScript
+- TailwindCSS
+- React Router
+- Hugging Face for AI analysis
 
-## Contributing
+## Local Development
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+
+## Deployment
+
+This project is configured for deployment on Netlify.
+
+### Environment Variables
+
+To deploy with AI functionality, you'll need to set up the following environment variable in your Netlify dashboard:
+
+- `VITE_HUGGINGFACE_API_TOKEN`: Your Hugging Face API token
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+MIT
